@@ -37,7 +37,72 @@
 }
 
 /*Fin menu no responsive*/
+/*Portada*/
+.portada-gonzat {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  transform: skewY(-4deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #32284D;
+  height: 90vh; 
+  margin-top: 50px; 
+  padding: 50px;
+  box-sizing: border-box;
+  transition: height 0.5s ease; /* Agregamos una transición para suavizar la minimización */
+}
 
+.portada-gonzat img {
+  max-width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.img-1 {
+  animation: slide-up 1s ease;
+}
+
+.img-2 {
+  animation: slide-down 1s ease;
+}
+
+@keyframes slide-up {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.portada-gonzat p {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/*Seccion empresa descripción*/
+.empresa-gonzat {
+  background-color: #f0f0f0;
+  height: 100vh; /* Ajustamos la altura a 100% del viewport */
+  padding: 50px;
+  box-sizing: border-box;
+}
 @media(max-width:600px){
     .menunonresponsive{
         display:none;
@@ -113,4 +178,16 @@
         .respmenu input:not(:checked) ~ .fa-times {
           display: none;
         }
+        .portada-gonzat {
+          height: 50vh; 
+          margin-top: 20px; 
+      }
+  
+      .portada-gonzat p {
+          font-size: 18px; 
+      }
+  
+      .portada-gonzat img {
+          max-width: 90%; 
+      }
 }
