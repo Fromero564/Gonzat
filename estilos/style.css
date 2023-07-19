@@ -90,9 +90,9 @@
 
 /*Seccion empresa descripción*/
 .empresa-gonzat {
+  width:100vw;
   background-color: #f0f0f0;
-  height: 100vh; 
-  width: 100vw;
+  height: auto;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -120,6 +120,25 @@
   max-height: 400px; 
 }
 
+/*Footer*/
+
+footer{
+ display: flex;
+ width: 100vw;
+ justify-content: space-around;
+ background-color: #B9452E;
+}
+
+.seccion-footer{
+  color:#FFF;
+  font-weight: bold;
+}
+
+.seccion-footer a{
+  text-decoration: none;
+  color:#FFF;
+}
+
 @media(max-width:600px){
     .menunonresponsive{
         display:none;
@@ -142,7 +161,7 @@
         width: 100px;
         height: 50px;
     }
-       .respmenu-link {
+    .respmenu-link {
           color: #FFF;
           text-decoration: none;
           display: block;
@@ -152,7 +171,7 @@
           font-variant: small-caps;
           background-color: #dfd8dae2; /*fondo del menu*/
           font-weight: bold;
-        }
+    }
         .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
           position: absolute;
           box-sizing: border-box;
@@ -209,5 +228,25 @@
     
       .logo-en-descripcion-empresa {
         width: 200px; 
+      }
+      .trabajos-realizados {
+        flex-direction: row;
+      }
+      
+      .trabajos-realizados img {
+        margin:2px;
+        width: calc(100% / 3); 
+        height: auto;
+      }
+
+      footer{
+        display:block;
+      }
+      .seccion-footer{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center; 
+        text-align: center; 
       }
 }
