@@ -24,6 +24,7 @@
     list-style: none;
     font-size: 18px;
     font-weight: bold;
+    margin-right: 30px;
 }
 
 .nav-bar ul li{
@@ -108,6 +109,15 @@
   align-items: center;
   justify-content: center; 
   text-align: center; 
+}
+
+.articulo-info-empresa h3{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.articulo-info-empresa p {
+  margin-bottom: 30px;
 }
 .trabajos-realizados {
   display: flex;
