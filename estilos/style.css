@@ -124,6 +124,12 @@
   width: 100px; /* Establece el ancho deseado */
   height: 200px; /* Establece la altura deseada */
 }
+/*Titulo carrousel*/
+.titulo-carrousel{
+    width: 100vw;
+    text-align: center;
+    background: none;
+}
 
 /*Footer*/
 
@@ -243,7 +249,11 @@ footer{
         width: calc(100% / 3); 
         height: auto;
       }
-
+      #carouselExampleSlidesOnly .carousel-inner .carousel-item .col img {
+        width: 50px; /* Establece el ancho deseado */
+        height: 100px; /* Establece la altura deseada */
+      }
+       
       footer{
         display:block;
       }
