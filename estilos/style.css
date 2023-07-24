@@ -37,6 +37,11 @@
     color: #FFF;
 }
 
+.nav-bar ul li:hover{
+  text-decoration: underline;
+  text-decoration-color:#FFF;
+}
+
 /*Fin menu no responsive*/
 /*Portada*/
 .portada-gonzat {
@@ -141,6 +146,25 @@
     background: none;
 }
 
+/*Página Contacto*/
+.contacto-seccion{
+  display: flex;
+  justify-content: space-around;
+}
+
+.datos-contacto {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  background-color: #32284D;
+  margin: 15px;
+  border-radius: 1rem;
+}
+
 /*Footer*/
 
 footer{
@@ -151,6 +175,7 @@ footer{
 }
 
 .seccion-footer{
+  margin-top:20px;
   color:#FFF;
   font-weight: bold;
 }
@@ -263,6 +288,8 @@ footer{
         width: 50px; /* Establece el ancho deseado */
         height: 100px; /* Establece la altura deseada */
       }
+
+    
        
       footer{
         display:block;
