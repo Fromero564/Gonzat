@@ -42,6 +42,8 @@
   text-decoration-color:#FFF;
 }
 
+
+
 /*Fin menu no responsive*/
 /*Portada*/
 .portada-gonzat {
@@ -150,20 +152,42 @@
 .contacto-seccion{
   display: flex;
   justify-content: space-around;
+
 }
 
 .datos-contacto {
   width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   font-weight: bold;
   color: #fff;
   background-color: #32284D;
   margin: 15px;
   border-radius: 1rem;
 }
+
+.iconos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.iconos i {
+ 
+  font-size: 46px;
+  padding: 25px;
+  margin: 30px;
+
+
+  
+ 
+}
+
+/* Estilos adicionales para los títulos (puedes ajustarlos según tus necesidades) */
+.datos-contacto h2 {
+  margin: 25px;
+ 
+}
+
 
 /*Footer*/
 
