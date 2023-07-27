@@ -41,7 +41,39 @@
   text-decoration: underline;
   text-decoration-color:#FFF;
 }
+.empresa{
+  display: flex;
+  justify-content: center;
 
+   background-color: aqua;
+
+}
+.nuestra{
+  width: 22%;
+  height: 20%;
+  background-color: #B9452E;
+  margin-left: 15px;
+  
+}
+
+.eleginos{
+  width: 22%;
+  height: 20%;
+  background-color: #B9452E;
+    margin-left: 15px;
+
+}
+.versatilidad{
+   width: 22%;
+  height: 20%;
+  background-color: #B9452E;
+  margin-left: 15px;
+}
+
+.empresa i{
+  background-color: pink;
+  
+}
 
 
 /*Fin menu no responsive*/
@@ -116,6 +148,7 @@
   align-items: center;
   justify-content: center; 
   text-align: center; 
+  
 }
 
 .articulo-info-empresa h3{
