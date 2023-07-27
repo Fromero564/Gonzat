@@ -182,10 +182,20 @@
  
 }
 
-/* Estilos adicionales para los títulos (puedes ajustarlos según tus necesidades) */
+/* Estilos adicionales para los títulos */
 .datos-contacto h2 {
   margin: 25px;
  
+}
+
+/*Página proyectos*/
+.proyecto-carousel {
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+.proyecto-carousel img {
+  max-width: 600px; 
+  height: 600px; 
 }
 
 
