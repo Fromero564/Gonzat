@@ -43,43 +43,60 @@
 }
 .empresa{
   display: flex;
-  justify-content: center;
-
-   background-color: aqua;
-
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  width: 70%;
+  height: 50%;
+    background-image: linear-gradient(135deg, #f0f0f0, #ffffff);
 }
 .nuestra{
   width: 22%;
   height: 20%;
-  background-color: #B9452E;
-  margin-left: 15px;
+
   
 }
 
 .eleginos{
   width: 22%;
   height: 20%;
-  background-color: #B9452E;
-    margin-left: 15px;
+ 
 
 }
 .versatilidad{
    width: 22%;
   height: 20%;
-  background-color: #B9452E;
-  margin-left: 15px;
+ 
 }
 
 .empresa i{
-  background-color: pink;
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+  color: #B9452E;
+ 
+}
+
+.empresa p{
+  font-weight: 350;
+   
+      
+}
+.empresa h4{
+   
+      padding: 5px;
+      border-bottom: 1px solid #ccc; 
   
 }
+
+
+
+
 
 
 /*Fin menu no responsive*/
 /*Portada*/
 .portada-gonzat {
-  position: relative;
+  position:relative;
   width: 100vw;
   overflow: hidden;
   transform: skewY(-4deg);
@@ -98,6 +115,7 @@
   max-width: 50%;
   height: auto;
   position: relative;
+
 }
 
 .img-1 {
@@ -143,12 +161,17 @@
 }
 
 .articulo-info-empresa{
+  position: relative;
   display: flex;
   flex-direction: column; 
   align-items: center;
   justify-content: center; 
   text-align: center; 
-  
+  margin-top: -60px;
+  margin-bottom: 50px;
+ 
+
+   
 }
 
 .articulo-info-empresa h3{
@@ -172,7 +195,7 @@
 
 #carouselExampleSlidesOnly .carousel-inner .carousel-item .col img {
   width: 100px; 
-  height: 200px; 
+  height: 120px; 
 }
 /*Titulo carrousel*/
 .titulo-carrousel{
@@ -199,19 +222,18 @@
 }
 
 .iconos {
-  display: flex;
+  
   flex-wrap: wrap;
-  justify-content: center;
+
 }
 
 .iconos i {
+  display: block;
+  font-size: 20px;
+  padding: 15px;
+  margin: 20px;
+  margin-right: 53%;
  
-  font-size: 46px;
-  padding: 25px;
-  margin: 30px;
-
-
-  
  
 }
 
