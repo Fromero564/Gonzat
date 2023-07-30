@@ -1,4 +1,11 @@
+/*colores*/
+.orange{
+  background-color: #B9452E;
+}
 
+.purple{
+  background-color: #32284D;
+}
 /*menu no responsive*/
 .menuresponsive{
     display: none;
@@ -245,14 +252,27 @@
 
 /*Página proyectos*/
 .proyecto-carousel {
-  max-width: 600px; 
+  width: 45VW; 
   margin: 0 auto; 
 }
 .proyecto-carousel img {
-  max-width: 600px; 
-  height: 600px; 
+  width: 50vw; 
+  height: 400px; 
 }
 
+.seccion-proyectos{
+  display: flex;
+  margin-top:50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-proyectos{
+ width: 50VW;
+ color:#FFF;
+ text-align: center;
+}
 
 /*Footer*/
 
@@ -376,6 +396,30 @@ footer{
       #carouselExampleSlidesOnly .carousel-inner .carousel-item .col img {
         width: 50px; /* Establece el ancho deseado */
         height: 100px; /* Establece la altura deseada */
+      }
+
+      /*Página de proyectos*/
+      .proyecto-carousel {
+        width: 100VW; 
+        margin: 0 auto; 
+      }
+      .proyecto-carousel img {
+        width: 100vw; 
+        height: 400px; 
+      }
+      
+      .seccion-proyectos{
+        display: flex;
+        margin-top:50px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .texto-proyectos{
+       width: 100VW;
+       text-align: center;
       }
 
     
