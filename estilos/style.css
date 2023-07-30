@@ -410,6 +410,7 @@ footer{
       
       .seccion-proyectos{
         display: flex;
+        height: auto;
         margin-top:50px;
         margin-bottom: 50px;
         justify-content: center;
@@ -419,10 +420,9 @@ footer{
       
       .texto-proyectos{
        width: 100VW;
+       margin-top: 20px;
        text-align: center;
-      }
-
-    
+      } 
        
       footer{
         display:block;
