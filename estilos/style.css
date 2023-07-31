@@ -240,7 +240,7 @@
   padding: 15px;
   margin: 20px;
   margin-right: 53%;
- 
+
  
 }
 
@@ -252,7 +252,7 @@
 
 /*Página proyectos*/
 .proyecto-carousel {
-  width: 45VW; 
+  width: 35VW; 
   margin: 0 auto; 
 }
 .proyecto-carousel img {
@@ -261,17 +261,63 @@
 }
 
 .seccion-proyectos{
+  width: 70vw;
   display: flex;
-  margin-top:50px;
+  margin-top:60px;
   margin-bottom: 50px;
   justify-content: center;
   align-items: center;
+  margin-left: 15vw;
+ 
 }
 
 .texto-proyectos{
  width: 50VW;
  color:#FFF;
  text-align: center;
+}
+/*servicios*/
+
+.elegirnosDIV {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+
+   
+}
+
+#elegirnos {
+    width: 40%;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #32284D;
+    margin: 20px;
+    float: left;
+    padding: 15px 40px;
+}
+
+.texto-titi {
+    font-family: "Titillium Web";
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.eleginos-div i{
+ color: #fff;
+  float: right;
+    font-size: 40px;
+ 
+    
+ 
+}
+
+.porque {
+  width: 80vw;
+  height: 40vw;
+  background-color: #f0f0f0;
+  top: 45px;
+
 }
 
 /*Footer*/
@@ -371,12 +417,15 @@ footer{
         }
         .portada-gonzat {
           height: 50vh; 
-          margin-top: 20px; 
+          margin-top: 20px;
+        
       }
   
       .portada-gonzat img {
           max-width: 90%; 
+        
       }
+
       .empresa-gonzat {
         padding: 20px; 
       }
