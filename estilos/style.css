@@ -212,11 +212,15 @@
 }
 
 /*Página Contacto*/
-.contacto-seccion{
+
+.contacto-seccion {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 
 }
+
 
 .datos-contacto {
   width: 600px;
@@ -277,25 +281,9 @@
  text-align: center;
 }
 /*servicios*/
-
-.elegirnosDIV {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-
-   
+.body-servicios{
+  background-color: #f0f0f0;
 }
-
-#elegirnos {
-    width: 40%;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: #32284D;
-    margin: 20px;
-    float: left;
-    padding: 15px 40px;
-}
-
 .texto-titi {
     font-family: "Titillium Web";
     font-size: 30px;
@@ -303,22 +291,44 @@
     font-weight: 800;
 }
 
-.eleginos-div i{
- color: #fff;
-  float: right;
-    font-size: 40px;
- 
-    
- 
+.eleginos-div {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  width: 100%;
+  min-height: 400px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #32284D;
+  color: #fff;
+  padding: 15px 40px;
+  position: relative;
 }
+.eleginos-div i {
+  font-size: 40px;
+}
+.eleginos-div img {
+  width:200px;
+  height: 150px;
+  align-self: flex-end; 
+  margin-top: auto; 
+  border-radius: 50%;
+  border-top: 5px solid #B9452E;
+  border-bottom: 5px solid #B9452E;
+}
+
 
 .porque {
-  width: 80vw;
-  height: 40vw;
-  background-color: #f0f0f0;
-  top: 45px;
-
+  width: 100vw;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
+  padding: 20px;
+  box-sizing: border-box; 
 }
+
 
 /*Footer*/
 
@@ -443,23 +453,41 @@ footer{
         height: auto;
       }
       #carouselExampleSlidesOnly .carousel-inner .carousel-item .col img {
-        width: 50px; /* Establece el ancho deseado */
-        height: 100px; /* Establece la altura deseada */
+        width: 50px; 
+        height: 100px;
       }
+
+      .empresa{
+        display:block;
+        margin-top: 75px;
+      }
+
+      .nuestra{
+        width: 100%;
+      }
+
+      .eleginos{
+        width: 100%;
+      }
+
+     .versatilidad{
+      width: 100%;
+     }
 
       /*Página de proyectos*/
       .proyecto-carousel {
-        width: 100VW; 
+        width: 70VW; 
         margin: 0 auto; 
       }
       .proyecto-carousel img {
         width: 100vw; 
-        height: 400px; 
+        height: 200px; 
       }
       
       .seccion-proyectos{
         display: flex;
         height: auto;
+        margin:0;
         margin-top:50px;
         margin-bottom: 50px;
         justify-content: center;
@@ -468,19 +496,49 @@ footer{
       }
       
       .texto-proyectos{
-       width: 100VW;
+       width: 100%;
        margin-top: 20px;
        text-align: center;
       } 
+
+      .main-proyectos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      /*Contacto*/
+      .datos-contacto,
+      .mapa-container {
+        flex-basis: 400px;
+        max-width: 400px;
+        height: 400px;
+      }
+      .mapa-container iframe {
+        width: 90%;
+        height: 90%;
+      }
+
+      /*servicios*/
+      .porque {
+        grid-template-columns: 1fr;
+      }
+      .eleginos-div {
+        min-height: 400px; 
+        margin-bottom: 20px; 
+      }
        
       footer{
         display:block;
       }
       .seccion-footer{
         display: flex;
+        padding: 20px;
         flex-direction: column; 
         align-items: center;
         justify-content: center; 
         text-align: center; 
-      }
+      } 
+
 }
