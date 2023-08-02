@@ -115,7 +115,7 @@
   margin-top: 50px; 
   padding: 50px;
   box-sizing: border-box;
-  transition: height 0.5s ease; /* Agregamos una transición para suavizar la minimización */
+  transition: height 0.5s ease;
 }
 
 .portada-gonzat img {
@@ -151,7 +151,26 @@
   }
 }
 
+.texto-bienvenida {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewY(4deg); 
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1;
+}
 
+#fade-text {
+  opacity: 0;
+  font-family: "Oswald", sans-serif;
+  transform: translateY(100%);
+  letter-spacing: 2px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  font-weight: bold;
+  font-size: 50px;
+}
 
 /*Seccion empresa descripción*/
 .empresa-gonzat {
@@ -351,6 +370,14 @@ footer{
 }
 
 @media(max-width:600px){
+  .texto-bienvenida {
+    font-size: 24px; 
+    padding: 5px 10px; 
+  }
+
+  #fade-text {
+    font-size: 30px; 
+  }
     .menunonresponsive{
         display:none;
        }
