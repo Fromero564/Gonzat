@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     var fadeText = document.getElementById("fade-text");
-    var fadeInDelay = 500; // Cambiado a 500ms para una aparición más rápida
+    var fadeInDelay = 500; 
     
     setTimeout(function() {
         fadeText.style.opacity = "1";
