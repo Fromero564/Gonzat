@@ -9,10 +9,13 @@
 /*menu no responsive*/
 .menuresponsive{
     display: none;
+  
+
 }
 .logo-noresponsive{
-    width: 250px;
-    height: 100px;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
 }
 
 .nav-bar{
@@ -20,14 +23,14 @@
     width: 100vw;
     height: 100px;
     background-color: #B9452E;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .nav-bar ul{
     display: flex;
     width: 50vw;
-    justify-content: end;
+    justify-content: center;
     list-style: none;
     font-size: 18px;
     font-weight: bold;
@@ -47,6 +50,13 @@
 .nav-bar ul li:hover{
   text-decoration: underline;
   text-decoration-color:#FFF;
+}
+
+#logo{
+   display: flex;
+  justify-content: center;
+  
+  background-color: #B9452E;
 }
 .empresa{
   display: flex;
@@ -116,21 +126,25 @@
   padding: 50px;
   box-sizing: border-box;
   transition: height 0.5s ease;
+   
 }
 
 .portada-gonzat img {
   max-width: 50%;
   height: auto;
   position: relative;
+  
 
 }
 
 .img-1 {
   animation: slide-up 1s ease;
+  opacity: 0.8;
 }
 
 .img-2 {
   animation: slide-down 1s ease;
+  opacity: 0.8;
 }
 
 @keyframes slide-up {
@@ -156,9 +170,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) skewY(4deg); 
-  color: rgba(255, 255, 255, 0.8);
-  padding: 10px 20px;
-  border: 5px solid rgba(255, 255, 255, 0.8) ;
+  color:rgba(255, 255, 255, 1);
+  padding: 20px 20px;
+  text-align: center; 
   z-index: 1;
 }
 
@@ -172,10 +186,11 @@
   font-size: 50px;
 }
 
+
 /*Seccion empresa descripción*/
 .empresa-gonzat {
   width:100vw;
-  background-color: #f0f0f0;
+  background-color: #f7f4f4;
   height: auto;
   padding: 50px;
   box-sizing: border-box;
@@ -217,17 +232,23 @@
   flex: 1;
   margin-right: 10px;
   max-height: 400px; 
+  
 }
 
 #carouselExampleSlidesOnly .carousel-inner .carousel-item .col img {
-  width: 100px; 
-  height: 120px; 
+  width: 75px; 
+  height: 75px; 
+margin: 30px;
+  
+  
 }
+
 /*Titulo carrousel*/
 .titulo-carrousel{
     width: 100vw;
     text-align: center;
     background: none;
+    margin: 15px;
 }
 
 /*Página Contacto*/
@@ -284,20 +305,23 @@
   width: 75vw;
   height: 56vh;
   display: flex;
-  border: 3px solid #B9452E;
+
   justify-content: center;
   align-items: center;
-  background-color: #ccc;
+
   margin-top:60px;
   margin-bottom: 50px;
 }
 .proyecto-carousel {
-  width: 35VW; 
+  width: 60VW; 
   margin: 0 auto; 
+  
 }
 .proyecto-carousel img {
   width: 50vw; 
   height: 400px; 
+  
+  
 }
 
 .seccion-proyectos{
@@ -312,6 +336,9 @@
  color:#FFF;
  text-align: center;
 }
+
+
+
 /*servicios*/
 .body-servicios{
   background-color: #f0f0f0;
