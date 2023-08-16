@@ -9,38 +9,47 @@ document.addEventListener("DOMContentLoaded", function() {
     }, fadeInDelay);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var carousels = document.querySelectorAll(".proyecto-carousel");
 
-var carousels = document.getElementsByClassName("proyecto-carousel");
-
-function collapseCarousel(carousel) {
-    carousel.classList.remove("proyecto-expanded");
-    document.removeEventListener("keydown", handleKeyPress);
-}
-
-function handleKeyPress(event) {
-    if (event.key === "Escape") {
-        var expandedCarousel = document.querySelector(".proyecto-carousel.proyecto-expanded");
-        if (expandedCarousel) {
-            collapseCarousel(expandedCarousel);
-        }
+    function collapseCarousel(carousel) {
+        carousel.classList.remove("proyecto-expanded");
+        document.removeEventListener("keydown", handleKeyPress);
+        var closeCarouselButton = carousel.querySelector(".close-button");
+        closeCarouselButton.style.display = "none"; // Oculta el botón al colapsar
     }
-}
 
-document.addEventListener("click", function (event) {
-    var target = event.target;
-    var isImage = target.tagName === "IMG";
-
-
-    if (isImage) {
-        var carousel = target.closest(".proyecto-carousel");
-        if (carousel) {
-            carousel.classList.toggle("proyecto-expanded");
-            if (carousel.classList.contains("proyecto-expanded")) {
-                document.addEventListener("keydown", handleKeyPress);
-            } else {
-                collapseCarousel(carousel);
+    function handleKeyPress(event) {
+        if (event.key === "Escape") {
+            var expandedCarousel = document.querySelector(".proyecto-carousel.proyecto-expanded");
+            if (expandedCarousel) {
+                collapseCarousel(expandedCarousel);
             }
         }
     }
+
+    carousels.forEach(function(carousel) {
+        var closeCarouselButton = carousel.querySelector(".close-button");
+        
+        closeCarouselButton.addEventListener("click", function() {
+            var expandedCarousel = document.querySelector(".proyecto-carousel.proyecto-expanded");
+            if (expandedCarousel) {
+                collapseCarousel(expandedCarousel);
+            }
+        });
+
+        var images = carousel.querySelectorAll("img");
+        images.forEach(function(image) {
+            image.addEventListener("click", function() {
+                carousel.classList.toggle("proyecto-expanded");
+                if (carousel.classList.contains("proyecto-expanded")) {
+                    document.addEventListener("keydown", handleKeyPress);
+                    closeCarouselButton.style.display = "block"; // Muestra el botón al expandir
+                } else {
+                    collapseCarousel(carousel);
+                }
+            });
+        });
+    });
 });
 

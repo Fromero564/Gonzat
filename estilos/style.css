@@ -357,7 +357,16 @@ margin: 30px;
   max-height: 80%;
 }
 
-
+.close-button {
+  position: absolute;
+  background-color: none;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 24px;
+  z-index: 1000;
+  display: none;
+}
 
 
 
