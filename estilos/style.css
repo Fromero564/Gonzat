@@ -359,6 +359,9 @@ margin: 30px;
  color:#FFF;
  text-align: center;
 }
+.info-expandir-proyectos{
+  text-decoration: underline;
+}
 
 /* Estilos para el carrusel ampliado */
 .proyecto-expanded {
@@ -441,7 +444,7 @@ margin: 30px;
 }
 
 
-.container
+.container-servicios
 {
 
 display: flex;
@@ -526,6 +529,17 @@ footer{
 .seccion-footer a{
   text-decoration: none;
   color:#FFF;
+}
+
+.iconos-footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconos-footer i{
+  font-size: 30px;
+  margin:10px;
 }
 
 @media(max-width:600px){
@@ -742,5 +756,14 @@ footer{
         justify-content: center; 
         text-align: center; 
       } 
+
+      .container-servicios{
+        display: block;
+      }
+
+      .servicios-div{
+        width: 335px;
+        height: 440px;
+      }
 
 }
