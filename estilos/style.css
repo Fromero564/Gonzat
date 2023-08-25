@@ -564,6 +564,13 @@ text-align: center;
 
 /*Footer*/
 
+.marca-agua p {
+  width: 100vw;
+  font-weight: bold;
+  text-align: center;
+  color: #FFF;
+  background-color: #B9452E;
+}
 footer{
  display: flex;
  width: 100vw;
