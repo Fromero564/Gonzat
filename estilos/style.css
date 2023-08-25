@@ -638,7 +638,7 @@ footer{
           text-decoration: none;
           display: block;
           padding: 10px 20px;
-          width: 50vw;
+          width: 100vw;
           max-width: 100vw;
           font-variant: small-caps;
           background-color: #dfd8dae2; /*fondo del menu*/
@@ -647,7 +647,7 @@ footer{
         .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
           position: absolute;
           box-sizing: border-box;
-          margin: 0;
+          margin: 0; 
           padding: 0;
           right: 0;
           top: 0;
@@ -736,6 +736,7 @@ footer{
      }
 
       /*Página de proyectos*/
+      
     
       .proyecto-carousel {
         width: 70VW; 
@@ -745,6 +746,13 @@ footer{
         width: 100vw; 
         height: 200px; 
       }
+
+      .proyecto-expanded {
+        width: 100vw;
+        max-height: 100%;
+        }
+
+     
       
       .seccion-proyectos{
         display: flex;
