@@ -353,19 +353,18 @@ margin: 30px;
 }
 
 .proyecto-carousel {
-  width: 60VW; 
+  
   margin: 0 auto; 
   
 }
 .proyecto-carousel img {
-  width: 50vw; 
-  height: 520px; 
+  height: 560px; 
   
-  
+   
 }
 
 .seccion-proyectos{
-  width: 70vw;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
