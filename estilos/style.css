@@ -58,10 +58,11 @@
   text-decoration: underline;
   text-decoration-color:#FFF;
   text-decoration: none;
-  border-radius: 2rem;
+
   transform: translateY(-10%);
-  box-shadow: 0px 0px 3px 3px #32284D;
-  color: #32284D;
+  /* box-shadow: 0px 0px 3px 3px #32284D;*/
+  color: #FFF; 
+  background-color:#32284D ;
 }
 
 
@@ -184,7 +185,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) skewY(4deg); 
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.3); */
   color:rgba(255, 255, 255, 1);
   padding: 20px 20px;
   text-align: center; 
